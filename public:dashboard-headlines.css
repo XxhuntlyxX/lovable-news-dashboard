@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #f7f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+.section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.09);
+    padding: 24px 20px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+}
+
+.section-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #235390;
+    margin-bottom: 18px;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #e4e7eb;
+    padding-bottom: 6px;
+}
+
+.updates-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.update-item {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e4e7eb;
+}
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-title {
+    font-size: 1.08rem;
+    color: #1e293b;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.update-meta {
+    font-size: 0.89rem;
+    color: #6c7a89;
+    margin-bottom: 3px;
+}
+
+.update-excerpt {
+    font-size: 0.98rem;
+    color: #334155;
+    margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .section {
+        padding: 16px 10px 12px 10px;
+    }
+    .section-header {
+        font-size: 1.14rem;
+    }
+}
