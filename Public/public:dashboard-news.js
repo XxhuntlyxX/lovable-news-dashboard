@@ -1,4 +1,5 @@
 // Utility: fetch RSS feed, parse XML, return array of items
+alert("dashboard-news.js loaded!");
 async function fetchRSS(feedUrl) {
     try {
         const corsUrl = 'https://corsproxy.io/?' + encodeURIComponent(feedUrl);
