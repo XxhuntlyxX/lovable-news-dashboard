@@ -38,12 +38,14 @@ body {
 
 .gloss-subtitle {
     font-size: 1.15em;
-    color: #ab826e; /* Sand Dune (unchanged) */
+    color: #ab826e; /* Sand Dune (was subtitle color, now used for news section titles, so change this) */
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
     letter-spacing: 0.01em;
     text-shadow: 1px 1px 2px #c0c0c044;
+    /* CHANGE: Use previous news section title color (#7e5c3e, Roman Coffee) */
+    color: #7e5c3e;
 }
 
 .dashboard-container {
@@ -68,7 +70,7 @@ body {
     font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ab826e; /* Sand Dune (was Trading News Dashboard subtitle color, now news titles color) */
+    color: #ab826e; /* Sand Dune (now for news section titles, was previously for subtitle) */
     border-bottom: 2px solid #918c86; /* Warm Grey */
     padding-bottom: 3px;
     background: #98817b22; /* Cinereous with transparency */
