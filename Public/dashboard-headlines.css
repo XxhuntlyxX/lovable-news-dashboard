@@ -29,7 +29,7 @@ body {
 .gloss-title {
     font-size: 2.2em;
     font-weight: 900;
-    letter-spacing: -1.32px; /* Increased kerning by 10% */
+    letter-spacing: -2.32px; /* Increased kerning by 10% */
     font-variant: small-caps;
     color: #7e5c3e; /* Roman Coffee (was background, now At a Gloss title color) */
     margin-bottom: 3px;
