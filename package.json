@@ -1,0 +1,26 @@
+{
+  "name": "lovable-news-dashboard",
+  "version": "1.0.0",
+  "description": "A responsive dashboard template for displaying live financial and commodities news feeds, organized for easy import into [Loveable](https://github.com/LoveableHQ/loveable).",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XxhuntlyxX/lovable-news-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XxhuntlyxX/lovable-news-dashboard/issues"
+  },
+  "homepage": "https://github.com/XxhuntlyxX/lovable-news-dashboard#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "rss-parser": "^3.13.0"
+  }
+}
