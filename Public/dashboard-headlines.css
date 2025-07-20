@@ -1,5 +1,5 @@
 body {
-    background: #836953; /* Pastel Brown (was used for At a Gloss, now main background) */
+    background: #836953; /* Pastel Brown */
     font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,32 +15,32 @@ body {
     border-bottom: 2.5px solid #98817b; /* Cinereous */
     border-right: 2.5px solid #c0c0c0; /* Silver */
     border-radius: 16px;
-    box-shadow: 0 6px 32px rgba(123, 92, 62, 0.10); /* Roman Coffee with opacity */
+    box-shadow: 0 6px 32px rgba(123, 92, 62, 0.10);
     position: relative;
 }
 
 .gloss-header {
     padding: 32px 40px 14px 40px;
-    background: linear-gradient(90deg, #a99a86 80%, #c0c0c0 100%); /* Grullo to Silver */
+    background: linear-gradient(90deg, #a99a86 80%, #c0c0c0 100%);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 
 .gloss-title {
-    font-size: 2.2em;
-    font-weight: 900;
-    letter-spacing: 0.18em; /* Noticeably increased kerning */
+    font-size: 2.4em; /* LARGER SIZE */
+    font-weight: 900;  /* HEAVY WEIGHT */
+    letter-spacing: 0.18em;
     font-variant: small-caps;
-    color: #7e5c3e; /* Roman Coffee */
+    color: #7e5c3e;
     margin-bottom: 3px;
     line-height: 1.1;
     text-shadow: 1px 2px 6px #98817b44;
 }
 
 .gloss-subtitle {
-    font-size: 1.15em;
-    color: #7e5c3e; /* Roman Coffee */
-    font-weight: 500;
+    font-size: 1.15em;         /* SMALLER SIZE */
+    font-weight: 600;          /* SEMIBOLD WEIGHT */
+    color: #7e5c3e;
     margin-bottom: 0;
     margin-top: 0;
     letter-spacing: 0.01em;
@@ -51,28 +51,28 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 24px 28px 20px 28px;
-    background: #f9f6f3; /* light background for contrast */
+    background: #f9f6f3;
     border-radius: 10px;
     box-shadow: 0 4px 16px #98817b22;
 }
 
 .section {
     margin-bottom: 32px;
-    background: #c0c0c0; /* Silver */
+    background: #c0c0c0;
     border-radius: 8px;
     box-shadow: 0 1px 4px #98817b33;
     padding: 16px 14px 12px 14px;
-    border-left: 4px solid #ab826e; /* Sand Dune */
+    border-left: 4px solid #ab826e;
 }
 
 .section-header {
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.2em;           /* SMALLER SIZE */
+    font-weight: 700;           /* BOLD WEIGHT */
     margin-bottom: 10px;
-    color: #ab826e; /* Sand Dune */
-    border-bottom: 2px solid #918c86; /* Warm Grey */
+    color: #ab826e;
+    border-bottom: 2px solid #918c86;
     padding-bottom: 3px;
-    background: #98817b22; /* Cinereous with transparency */
+    background: #98817b22;
     border-radius: 4px 4px 0 0;
 }
 
@@ -83,45 +83,49 @@ body {
 
 .update-item {
     padding: 10px 0;
-    border-bottom: 1px solid #918c86; /* Warm Grey */
+    border-bottom: 1px solid #918c86;
 }
 
 .update-title {
-    font-weight: bold;
-    color: #ab826e; /* Sand Dune */
+    font-size: 1.1em;           /* LARGER SIZE */
+    font-weight: 700;           /* BOLD WEIGHT */
+    color: #ab826e;
 }
 
 .update-title a {
     text-decoration: none;
-    color: #836953; /* Pastel Brown */
+    color: #836953;
     transition: color 0.2s;
+    font-weight: 600;           /* SEMIBOLD WEIGHT for links */
 }
 .update-title a:hover {
-    color: #ab826e; /* Sand Dune hover */
+    color: #ab826e;
     text-decoration: underline;
 }
 
 .update-meta {
-    font-size: 0.93em;
-    color: #918c86; /* Warm Grey */
+    font-size: 1em;             /* SMALLER SIZE */
+    color: #918c86;
+    font-weight: 400;           /* NORMAL WEIGHT */
 }
 
 .update-excerpt {
-    font-size: 0.98em;
+    font-size: 1em;             /* SMALLER SIZE */
     margin-top: 3px;
-    color: #7e5c3e; /* Roman Coffee */
-    background: #c0c0c0; /* Silver */
+    color: #7e5c3e;
+    background: #c0c0c0;
     border-radius: 4px;
     padding: 2px 6px;
     box-shadow: 0 1px 2px #ab826e33;
+    font-weight: 400;           /* NORMAL WEIGHT */
 }
 
 /* News source section */
 .news-source {
-    font-weight: bold;
+    font-weight: 600;           /* SEMIBOLD WEIGHT */
     margin-top: 2rem;
-    font-size: 1.2em;
-    color: #ab826e; /* Sand Dune */
+    font-size: 1.15em;          /* SMALLER SIZE */
+    color: #ab826e;
     display: flex;
     align-items: center;
 }
@@ -135,19 +139,20 @@ body {
 .headline-item {
     margin-bottom: 1rem;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #98817b; /* Cinereous */
+    border-bottom: 1px solid #98817b;
 }
 
 .headline-item a {
-    color: #ab826e; /* Sand Dune */
+    color: #ab826e;
     text-decoration: none;
     word-break: break-word;
-    font-weight: 500;
+    font-weight: 600;           /* SEMIBOLD WEIGHT */
+    font-size: 1.08em;          /* LARGER SIZE */
 }
 
 .headline-item a:hover {
     text-decoration: underline;
-    color: #836953; /* Pastel Brown */
+    color: #836953;
 }
 
 .tradernick-icon {
