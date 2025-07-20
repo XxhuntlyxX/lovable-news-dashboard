@@ -29,9 +29,9 @@ body {
 .gloss-title {
     font-size: 2.2em;
     font-weight: 900;
-    letter-spacing: -2.32px; /* Increased kerning by 10% */
+    letter-spacing: 0.18em; /* Noticeably increased kerning */
     font-variant: small-caps;
-    color: #7e5c3e; /* Roman Coffee (was background, now At a Gloss title color) */
+    color: #7e5c3e; /* Roman Coffee */
     margin-bottom: 3px;
     line-height: 1.1;
     text-shadow: 1px 2px 6px #98817b44;
@@ -39,7 +39,7 @@ body {
 
 .gloss-subtitle {
     font-size: 1.15em;
-    color: #7e5c3e; /* Roman Coffee (was news section title color) */
+    color: #7e5c3e; /* Roman Coffee */
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
@@ -69,7 +69,7 @@ body {
     font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ab826e; /* Sand Dune (was Trading News Dashboard subtitle color, now news titles color) */
+    color: #ab826e; /* Sand Dune */
     border-bottom: 2px solid #918c86; /* Warm Grey */
     padding-bottom: 3px;
     background: #98817b22; /* Cinereous with transparency */
