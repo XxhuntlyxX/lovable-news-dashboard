@@ -47,3 +47,60 @@ body {
     margin-top: 3px;
     color: #444;
 }
+
+/* ------- Additions for headlines/news -------- */
+.news-source {
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 1.2em;
+    color: #224488;
+    display: flex;
+    align-items: center;
+}
+
+.headlines-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+.headline-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.headline-item a {
+    color: #1a73e8;
+    text-decoration: none;
+    word-break: break-word;
+    font-weight: 500;
+}
+
+.headline-item a:hover {
+    text-decoration: underline;
+    color: #e53935;
+}
+
+.tradernick-icon {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(30,40,55,0.06);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding: 6px;
+        margin: 4px;
+    }
+    .news-source {
+        font-size: 1em;
+    }
+    .headline-item {
+        font-size: 0.98em;
+    }
+}

@@ -6,6 +6,8 @@ const FEED_NAMES = [
   { name: 'spglobal', label: 'S&P Global - Latest Commodity Insights' },
   { name: 'federalbank', label: 'Economic Times: Federal Bank News' },
   { name: 'boe', label: 'Bank of England News' },
+  // --- TraderNick YouTube feed added below ---
+  { name: 'tradernick', label: 'TraderNick (YouTube)', icon: 'https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png' }
 ];
 
 // Use your Replit backend URL:
@@ -22,9 +24,15 @@ FEED_NAMES.forEach(feed => {
       data.items.forEach(item => {
         const li = document.createElement("li");
         li.className = "update-item";
+        // Show YouTube icon for TraderNick
+        let titleContent = "";
+        if (feed.name === "tradernick" && feed.icon) {
+          titleContent = `<img class="tradernick-icon" src="${feed.icon}" alt="YouTube" /> `;
+        }
+        titleContent += `<a href="${item.link}" target="_blank" rel="noopener">${item.title}</a>`;
         li.innerHTML = `
           <div class="update-title">
-            <a href="${item.link}" target="_blank" rel="noopener">${item.title}</a>
+            ${titleContent}
           </div>
           <div class="update-meta">${item.pubDate || ""}</div>
           <div class="update-excerpt">${item.contentSnippet || ""}</div>
