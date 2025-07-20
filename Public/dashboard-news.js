@@ -6,8 +6,7 @@ const FEED_NAMES = [
   { name: 'spglobal', label: 'S&P Global - Latest Commodity Insights' },
   { name: 'federalbank', label: 'Economic Times: Federal Bank News' },
   { name: 'boe', label: 'Bank of England News' },
-  // --- TraderNick YouTube feed added below ---
-  { name: 'tradernick', label: 'TraderNick (YouTube)', icon: 'https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png' }
+  { name: 'a1trading', label: 'TraderNick (A1Trading.com)' } // <-- Add this line!
 ];
 
 // Use your Replit backend URL:
