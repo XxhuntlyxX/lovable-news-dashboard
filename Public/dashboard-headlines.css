@@ -1,5 +1,5 @@
 body {
-    background: #f6f6f6;
+    background: #7e5c3e; /* Roman Coffee */
     font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,90 +9,118 @@ body {
     max-width: 980px;
     margin: 48px auto;
     padding: 0;
-    background: #fafbfc;
-    border-top: 7px solid #1e3456;
-    border-left: 7px solid #1e3456;
-    border-bottom: 2.5px solid #b6b7b9;
-    border-right: 2.5px solid #b6b7b9;
+    background: #a99a86; /* Grullo */
+    border-top: 7px solid #ab826e; /* Sand Dune */
+    border-left: 7px solid #836953; /* Pastel Brown */
+    border-bottom: 2.5px solid #98817b; /* Cinereous */
+    border-right: 2.5px solid #c0c0c0; /* Silver */
     border-radius: 16px;
-    box-shadow: 0 6px 32px rgba(30,52,86,0.06);
+    box-shadow: 0 6px 32px rgba(123, 92, 62, 0.10); /* Roman Coffee with opacity */
     position: relative;
 }
 
 .gloss-header {
     padding: 32px 40px 14px 40px;
-    background: transparent;
+    background: linear-gradient(90deg, #a99a86 80%, #c0c0c0 100%); /* Grullo to Silver */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .gloss-title {
     font-size: 2.2em;
     font-weight: 900;
     letter-spacing: -1.2px;
-    color: #1e3456;
+    color: #836953; /* Pastel Brown */
     margin-bottom: 3px;
     line-height: 1.1;
+    text-shadow: 1px 2px 6px #98817b44;
 }
 
 .gloss-subtitle {
     font-size: 1.15em;
-    color: #5274a6;
+    color: #ab826e; /* Sand Dune */
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
     letter-spacing: 0.01em;
+    text-shadow: 1px 1px 2px #c0c0c044;
 }
 
 .dashboard-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 24px 28px 20px 28px;
-    background: #fff;
+    background: #f9f6f3; /* light background for contrast */
     border-radius: 10px;
+    box-shadow: 0 4px 16px #98817b22;
 }
 
 .section {
     margin-bottom: 32px;
+    background: #c0c0c0; /* Silver */
+    border-radius: 8px;
+    box-shadow: 0 1px 4px #98817b33;
+    padding: 16px 14px 12px 14px;
+    border-left: 4px solid #ab826e; /* Sand Dune */
 }
+
 .section-header {
     font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #2e3c4d;
-    border-bottom: 2px solid #e3e3e3;
+    color: #7e5c3e; /* Roman Coffee */
+    border-bottom: 2px solid #918c86; /* Warm Grey */
     padding-bottom: 3px;
+    background: #98817b22; /* Cinereous with transparency */
+    border-radius: 4px 4px 0 0;
 }
+
 .updates-list {
     list-style: none;
     padding: 0;
 }
+
 .update-item {
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #918c86; /* Warm Grey */
 }
+
 .update-title {
     font-weight: bold;
-    color: #304878;
+    color: #ab826e; /* Sand Dune */
 }
+
 .update-title a {
     text-decoration: none;
-    color: inherit;
+    color: #836953; /* Pastel Brown */
+    transition: color 0.2s;
 }
+.update-title a:hover {
+    color: #ab826e; /* Sand Dune hover */
+    text-decoration: underline;
+}
+
 .update-meta {
     font-size: 0.93em;
-    color: #6b7a8f;
+    color: #918c86; /* Warm Grey */
 }
+
 .update-excerpt {
     font-size: 0.98em;
     margin-top: 3px;
-    color: #444;
+    color: #7e5c3e; /* Roman Coffee */
+    background: #c0c0c0; /* Silver */
+    border-radius: 4px;
+    padding: 2px 6px;
+    box-shadow: 0 1px 2px #ab826e33;
 }
 
-/* ------- Additions for headlines/news -------- */
+/* News source section */
 .news-source {
     font-weight: bold;
     margin-top: 2rem;
     font-size: 1.2em;
-    color: #224488;
+    color: #ab826e; /* Sand Dune */
     display: flex;
     align-items: center;
 }
@@ -106,11 +134,11 @@ body {
 .headline-item {
     margin-bottom: 1rem;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #98817b; /* Cinereous */
 }
 
 .headline-item a {
-    color: #1a73e8;
+    color: #ab826e; /* Sand Dune */
     text-decoration: none;
     word-break: break-word;
     font-weight: 500;
@@ -118,7 +146,7 @@ body {
 
 .headline-item a:hover {
     text-decoration: underline;
-    color: #e53935;
+    color: #836953; /* Pastel Brown */
 }
 
 .tradernick-icon {
@@ -127,9 +155,11 @@ body {
     height: 20px;
     margin-right: 8px;
     border-radius: 3px;
-    box-shadow: 0 1px 3px rgba(30,40,55,0.06);
+    box-shadow: 0 1px 3px #98817b44;
+    background: #c0c0c0;
 }
 
+/* Responsive tweaks */
 @media (max-width: 600px) {
     .outer-dashboard-container {
         margin: 12px 2px;
