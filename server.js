@@ -17,7 +17,8 @@ const feeds = {
   spglobal: 'https://www.spglobal.com/commodityinsights/en/rss-feeds/market-insights',
   federalbank: 'https://economictimes.indiatimes.com/wealth/bank/federal-bank/rssfeeds/39489336.cms',
   boe: 'https://www.bankofengland.co.uk/boeapps/rssfeed.aspx?section=News',
-  a1trading: 'https://www.a1trading.com/author/tradernick135/feed/'
+  a1trading: 'https://www.a1trading.com/author/tradernick135/feed/',
+  // TraxNYC is a Google search, not an RSS feed; handled in the frontend
 };
 
 app.use(cors());
